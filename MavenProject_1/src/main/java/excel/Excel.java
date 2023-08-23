@@ -17,7 +17,7 @@ public class Excel {
 	public static String readStringData(int i, int j) throws IOException {
 		// f=new FileInputStream("D:\\testdata.xlsx");
 		String path = System.getProperty("user.dir");
-		System.out.println(path + "Directoty is");
+		System.out.println(path);
 		f = new FileInputStream(path + "\\src\\main\\resources\\ExcelRead1.xlsx");
 		w = new XSSFWorkbook(f);
 		sh = w.getSheet("sheet1");
@@ -29,7 +29,7 @@ public class Excel {
 	public static String readIntegerData(int i, int j) throws IOException {
 		// f=new FileInputStream("D:\\testdata.xlsx");
 		String path = System.getProperty("user.dir");
-		 System.out.println(path + "Directoty is");
+		 System.out.println(path);
 		f = new FileInputStream(path + "\\src\\main\\resources\\ExcelRead1.xlsx");
 		w = new XSSFWorkbook(f);
 		sh = w.getSheet("sheet1");
